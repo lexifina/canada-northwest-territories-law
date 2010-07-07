@@ -1,0 +1,9 @@
+DEPARTMENT OF JUSTICE ACT
+R.S.N.W.T. 1988,c.97(Supp.)
+In force September 3, 1991;
+SI-012-91
+AMENDED BY
+S.N.W.T. 1994,c.30
+S.N.W.T. 1995,c.11
+S.N.W.T. 2009,c.12
+S.N.W.T. 2010,c.16
