@@ -1,0 +1,11 @@
+MINE HEALTH AND SAFETY ACT
+S.N.W.T. 1994,c.25
+In force December 15, 1995;
+SI-014-95
+AMENDED BY
+S.N.W.T. 1996,c.9
+In force April 16, 1996
+S.N.W.T. 2007,c.21
+In force April 1, 2008;
+SI-006-2007
+S.N.W.T. 2010,c.16
