@@ -1,0 +1,8 @@
+TOURISM ACT
+S.N.W.T. 2006,c.26
+In force April 1, 2007;
+SI-002-2007
+AMENDED BY
+S.N.W.T. 2010,c.16
+S.N.W.T. 2010,c.27
+In force November 15, 2010
