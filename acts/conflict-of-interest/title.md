@@ -1,0 +1,9 @@
+CONFLICT OF INTEREST ACT
+R.S.N.W.T. 1988,c.C-16
+AMENDED BY
+S.N.W.T. 2005,c.2
+S.N.W.T. 2010,c.16
+S.N.W.T. 2011,c.2
+In force July 16, 1991 (deemed)
+S.N.W.T. 2011,c.8
+S.N.W.T. 2013,c.9
