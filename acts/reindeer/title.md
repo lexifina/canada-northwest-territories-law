@@ -1,0 +1,4 @@
+REINDEER ACT
+S.N.W.T. 2014,c.16
+In force April 1, 2014
+AMENDED BY
