@@ -1,0 +1,11 @@
+GAS PROTECTION ACT
+R.S.N.W.T. 1988,c.G-2
+AMENDED BY
+S.N.W.T. 1998,c.21
+In force December 19, 1998;
+SI-018-98
+S.N.W.T. 2010,c.16
+S.N.W.T. 2011,c.8
+S.N.W.T. 2013,c.9
+S.N.W.T. 2014,c.10
+In force April 1, 2014
