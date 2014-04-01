@@ -1,0 +1,5 @@
+SCIENTISTS ACT
+R.S.N.W.T. 1988,c.S-4
+AMENDED BY
+S.N.W.T. 2014,c.10
+In force April 1, 2014
