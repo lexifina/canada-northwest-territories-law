@@ -1,0 +1,6 @@
+MINERS LIEN ACT
+R.S.N.W.T. 1988,c.M-12
+AMENDED BY
+S.N.W.T. 2014,c.10
+In force April 1, 2014
+S.N.W.T. 2014,c.31
