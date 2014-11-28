@@ -1,0 +1,13 @@
+FOREST MANAGEMENT ACT
+R.S.N.W.T. 1988,c.F-9
+AMENDED BY
+S.N.W.T. 2009,c.16
+In force February 1, 2010;
+SI-009-2009
+S.N.W.T. 2010,c.16
+S.N.W.T. 2013,c.23
+S.N.W.T. 2014,c.10
+In force April 1, 2014
+S.N.W.T. 2013,c.30
+In force November 28, 2014
+SI-003-2014
