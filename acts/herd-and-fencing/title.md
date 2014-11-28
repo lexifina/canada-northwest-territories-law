@@ -1,0 +1,11 @@
+HERD AND FENCING ACT
+R.S.N.W.T. 1988,c.H-2
+AMENDED BY
+S.N.W.T. 2009,c.12
+S.N.W.T. 2010,c.19
+In force July 1, 2010;
+SI-006-2010
+S.N.W.T. 2011,c.16
+S.N.W.T. 2013,c.30
+In force November 28, 2014
+SI-003-2014
