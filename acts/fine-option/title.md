@@ -1,0 +1,10 @@
+FINE OPTION ACT
+R.S.N.W.T. 1988,c.F-5
+AMENDED BY
+S.N.W.T. 1997,c.3
+S.N.W.T. 2003,c.31
+In force April 1, 2004;
+SI-003-2004
+S.N.W.T. 2015,c.34
+In force February 1, 2016
+SI-009-2015
