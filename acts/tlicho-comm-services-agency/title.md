@@ -1,0 +1,8 @@
+TÅÎCHÔ COMMUNITY
+SERVICES AGENCY ACT
+S.N.W.T. 2005,c.7
+In force August 4, 2005
+AMENDED BY
+S.N.W.T. 2015,c.13
+In force April 1, 2016
+SI-001-2016
