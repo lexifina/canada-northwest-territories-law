@@ -1,0 +1,5 @@
+## SURFACE RIGHTS BOARD ACT
+Whereas the Gwich’in, Sahtu, Inuvialuit and Tåîchô Agreements allow for the establishment by legislation of a regime for the determination of terms and conditions of access to Gwich’in lands, Sahtu lands and Tåîchô lands, and the waters overlying those lands, and Inuvialuit lands, as well as the compensation to be paid in respect of that access;
+And whereas, in addition, it is appropriate to establish a regime for the determination of terms and conditions of access to other land in the Northwest Territories and the compensation to be paid in respect of that access;
+And whereas it is appropriate to establish, in accordance with the Agreements, a surface rights board as an institution of public government, whose purpose is to resolve matters in dispute relating to terms and conditions of access to lands and waters, primarily for a commercial purpose, and the compensation to be paid in respect of that access;
+The Commissioner of the Northwest Territories, by and with the advice and consent of the Legislative Assembly, enacts as follows:
