@@ -1,0 +1,18 @@
+ALL-TERRAIN VEHICLES ACT
+R.S.N.W.T. 1988,c.A-3
+AMENDED BY
+R.S.N.W.T. 1988,c.1(Supp.)
+In force, April 1, 1989;
+SI-014-89
+S.N.W.T. 1995,c.11
+S.N.W.T. 1997,c.8
+S.N.W.T. 1998,c.5
+S.N.W.T. 2003,c.31
+In force April 1, 2004;
+SI-003-2004
+S.N.W.T. 2010,c.16
+S.N.W.T. 2012,c.18
+S.N.W.T. 2015,c.27
+S.N.W.T. 2015,c.28
+In force May 1, 2016
+SI-006-2016
