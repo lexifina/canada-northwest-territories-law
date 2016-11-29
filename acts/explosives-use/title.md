@@ -1,0 +1,10 @@
+EXPLOSIVES USE ACT
+R.S.N.W.T. 1988,c.E-10
+AMENDED BY
+S.N.W.T. 1996,c.9
+In force April 16, 1996
+S.N.W.T. 1998,c.5
+S.N.W.T. 2007,c.21
+In force April 1, 2008;
+SI-006-2007
+S.N.W.T. 2016,c.9
