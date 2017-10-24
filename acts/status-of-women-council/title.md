@@ -1,0 +1,12 @@
+STATUS OF WOMEN COUNCIL ACT
+R.S.N.W.T. 1988,c.55(Supp.)
+In force, April 4, 1990;
+SI-006-90
+AMENDED BY
+S.N.W.T. 1995, ch. 11
+S.N.W.T. 2010,c.16
+S.N.W.T. 2011,c.16
+S.N.W.T. 2015,c.13
+In force April 1, 2016
+SI-001-2016
+S.N.W.T. 2017,c.20
