@@ -1,0 +1,13 @@
+PUBLIC AIRPORTS ACT
+S.N.W.T. 2006,c.5
+In force, April 1, 2006;
+SI-001-2006
+AMENDED BY
+S.N.W.T. 2007,c.16
+S.N.W.T. 2008,c.8
+S.N.W.T. 2010,c.16
+S.N.W.T. 2011,c.8
+S.N.W.T. 2015,c.29
+In force April 1, 2016
+SI-005-2016
+S.N.W.T. 2017,c.20
