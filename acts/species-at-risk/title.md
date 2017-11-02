@@ -1,0 +1,9 @@
+SPECIES AT RISK (NWT) ACT
+S.N.W.T. 2009,c.16
+In force February 1, 2010;
+SI-009-2009
+AMENDED BY
+S.N.W.T. 2011,c.16
+S.N.W.T. 2017,c.19
+In force October 31, 2017
+SI-006-2017
