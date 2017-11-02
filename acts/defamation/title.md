@@ -1,0 +1,7 @@
+DEFAMATION ACT
+R.S.N.W.T. 1988,c.D-1
+AMENDED BY
+S.N.W.T. 2013,c.23
+S.N.W.T. 2017,c.19
+In force October 31, 2017 [F]
+SI-006-2017
