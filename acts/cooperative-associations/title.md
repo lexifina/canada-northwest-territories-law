@@ -1,0 +1,21 @@
+CO-OPERATIVE ASSOCIATIONS ACT
+R.S.N.W.T. 1988,c.C-19
+AMENDED BY
+S.N.W.T. 1995,c.2
+In force September 1, 1995;
+SI-007-95
+S.N.W.T. 1998,c.5
+S.N.W.T. 1996,c.19
+In force April 1, 1998;
+SI-005-98
+S.N.W.T. 1998,c.24
+S.N.W.T. 1998,c.33
+In force April 1, 1999
+S.N.W.T. 2004,c.11
+S.N.W.T. 2005,c.14
+S.N.W.T. 2006,c.23
+S.N.W.T. 2011,c.16
+S.N.W.T. 2012,c.13
+S.N.W.T 2015,c.21
+In force June 29, 2018
+SI-002-2018
