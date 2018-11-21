@@ -1,0 +1,21 @@
+SOCIAL ASSISTANCE ACT
+R.S.N.W.T. 1988,c.S-10
+AMENDED BY
+R.S.N.W.T. 1988,c.113(Supp.)
+S.N.W.T. 1991-92,c.19
+In force April 1, 1992
+S.N.W.T. 1993,c.14
+S.N.W.T. 1998,c.41
+S.N.W.T. 1998,c.21
+In force December 19, 1998;
+SI-018-98
+S.N.W.T. 2011,c.8
+S.N.W.T. 2015,c.27
+S.N.W.T. 2015,c.13
+In force April 1, 2016
+SI-001-2016
+S.N.W.T. 2015,c.14
+In force August 1, 2016
+SI-008-2016
+S.N.W.T. 2016,c.9
+S.N.W.T. 2018,c.21
