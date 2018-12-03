@@ -1,0 +1,12 @@
+ARCHIVES ACT
+R.S.N.W.T. 1988,c.A-6
+AMENDED BY
+S.N.W.T. 1999,c.21
+In force December 31, 1999
+S.N.W.T. 2000,c.16
+S.N.W.T. 2002,c.20
+S.N.W.T. 2007,c.2
+In force May 1, 2008;
+SI-004-2008
+S.N.W.T. 2010,c.16
+S.N.W.T. 2018,c.18
