@@ -1,0 +1,8 @@
+LOTTERIES ACT
+R.S.N.W.T. 1988,c.L-11
+AMENDED BY
+S.N.W.T. 1996,c.9
+In force October 25, 1998;
+SI-013-98
+S.N.W.T. 2017,c.20
+S.N.W.T. 2018,c.18
