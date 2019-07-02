@@ -1,0 +1,14 @@
+SOCIETIES ACT
+R.S.N.W.T. 1988,c.S-11
+AMENDED BY
+S.N.W.T. 1998,c.5
+S.N.W.T. 1998,c.33
+In force April 1, 1999
+S.N.W.T. 2000,c.15
+S.N.W.T. 2003,c.5
+S.N.W.T. 2004,c.11
+S.N.W.T. 2009,c.12
+S.N.W.T. 2018,c.18
+S.N.W.T. 2018,c.15
+s.23 in force June 7, 2019
+SI-005-2019
