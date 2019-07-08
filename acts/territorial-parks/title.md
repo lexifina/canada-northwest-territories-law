@@ -1,0 +1,17 @@
+TERRITORIAL PARKS ACT
+R.S.N.W.T. 1988,c.T-4
+AMENDED BY
+S.N.W.T. 1995,c.11
+S.N.W.T. 2003,c.8
+In force May 1, 2003;
+SI-002-2003
+S.N.W.T. 2006,c.14
+S.N.W.T. 2011,c.16
+S.N.W.T. 2011,c.32
+In force January 1, 2012;
+SI-008-2011
+S.N.W.T. 2013,c.8
+S.N.W.T. 2017,c.20
+S.N.W.T. 2019,c.11
+In force June 20, 2019
+SI-007-2019
