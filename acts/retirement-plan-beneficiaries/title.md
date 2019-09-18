@@ -1,0 +1,9 @@
+RETIREMENT PLAN
+BENEFICIARIES ACT
+R.S.N.W.T. 1988,c.R-6
+AMENDED BY
+S.N.W.T. 1995,c.26
+S.N.W.T. 2019,c.21
+In force September 1, 2019
+Except sections 1, 2, 3, 7 and 8
+SI-009-2019
