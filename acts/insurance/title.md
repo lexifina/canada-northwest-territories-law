@@ -1,0 +1,32 @@
+INSURANCE ACT
+RSNWT 1988,c.I-4
+AMENDED BY
+RSNWT 1988,c.1(Supp.)
+In force April 21, 1989;
+SI-014-89
+RSNWT 1988,c.37(Supp.)
+RSNWT 1988,c.99(Supp.)
+SNWT 1991-92,c.31
+Sections 3 and 4 in force January 1, 1994
+SNWT 1994,c.7
+In force January 1, 1995;
+SI-019-94
+SNWT 1995,c.11
+SNWT 1997,c.12
+In force July 1, 1998;
+SI-009-98
+SNWT 1998,c.17
+SNWT 1998,c.24
+SNWT 1999,c.21
+In force December 31, 1999
+SNWT 2005,c.2
+SNWT 2007,c.21
+In force April 1, 2008;
+SI-006-2007
+SNWT 2011,c.16
+SNWT 2014,c.31
+SNWT 2017,c.20
+SNWT 2019,c.30
+In force January 1, 2020
+SI-019-2019
+SNWT 2022,c.4
