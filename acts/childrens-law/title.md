@@ -1,0 +1,25 @@
+CHILDREN’S LAW ACT
+SNWT 1997,c.14
+In force November 1, 1998;
+SI-014-98
+AMENDED BY
+SNWT 1998,c.17,s.6
+In force November 1, 1998;
+see s. 32(1) and (2)
+SNWT 1999,c.5
+SNWT 2002,c.20
+SNWT 2004,c.11
+SNWT 2010,c.16
+SNWT 2012,c.18
+SNWT 2011,c.34
+In force January 1, 2013;
+SI-004-2012
+SNWT 2015,c.24
+In force January 31, 2017;
+SI-009-2016
+SNWT 2016,c.8
+In force July 1, 2019;
+SI-006-2019
+SNWT 2019,c.21
+In force November 15, 2022
+SI-013-2022
