@@ -1,0 +1,29 @@
+ELECTIONS AND PLEBISCITES ACT
+SNWT 2006,c.15
+In force January 7, 2007;
+SI-005-2006
+AMENDED BY
+SNWT 2010,c.15
+In force July 1, 2010;
+SI-002-2010
+SNWT 2011,c.8
+SNWT 2011,c.16
+SNWT 2014,c.10
+In force April 1, 2014
+SNWT 2014,c.19
+SNWT 2014,c.29
+SNWT 2014,c.2
+In force October 1, 2015
+SI-006-2015
+SNWT 2015,c.25
+In force November 23, 2015
+SNWT 2016,c.9
+SNWT 2018,c.16
+In force November 20, 2018
+SNWT 2019,c.22
+Sections 5, 23 and 25 in force August 22, 2019
+Other sections in force October 1, 2019
+SI-011-2019
+SNWT 2020,c.13
+SNWT 2020,c.14
+SNWT 2022,c.15
