@@ -1,0 +1,14 @@
+FAMILY LAW ACT
+SNWT 1997,c.18
+In force November 1, 1998;
+SI-015-98
+AMENDED BY
+SNWT 1998,c.17,s.11
+In force November 1, 1998;
+SNWT 1999,c.5
+SNWT 2002,c.6
+SNWT 2002,c.20
+SNWT 2010,c.16
+SNWT 2015,c.27 [F]
+SNWT 2023,c.8
+In force April 1, 2023
