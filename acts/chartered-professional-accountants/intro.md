@@ -1,0 +1,3 @@
+## CHARTERED PROFESSIONAL ACCOUNTANTS ACT
+WHEREAS it is desirable, in the interests of the public, to establish the Organization of Chartered Professional Accountants of the Northwest Territories and Nunavut (CPA NWT/NU) as a body corporate for the purpose of advancing and maintaining the standard of professional accounting and auditing carried on in the Northwest Territories, for governing and regulating members offering services as accountants and auditors and providing for the interests of the public and the profession;
+The Commissioner of the Northwest Territories, by and with the advice and consent of the Legislative Assembly, enacts as follows:
