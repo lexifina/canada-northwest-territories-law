@@ -1,0 +1,31 @@
+PERSONAL PROPERTY SECURITY ACT
+SNWT 1994,c.8
+In force May 7, 2001;
+Except s.1(1), 42, 43(1.1), 71 which came
+into force April 27, 2001;
+SI-004-2001
+AMENDED BY
+SNWT 1997,c.15
+In force April 1, 1998;
+SI-006-98
+SNWT 1998,c.5
+SNWT 1999,c.5
+SNWT 2003,c.5
+SNWT 2006,c.23
+SNWT 2007,c.21
+In force April 1, 2008;
+SI-006-2007
+SNWT 2009,c.12
+SNWT 2009,c.14
+In force August 1, 2009;
+SI-005-2009
+SNWT 2010,c.16
+SNWT 2011,c.23
+In force April 1, 2012
+SNWT 2012,c.18
+SNWT 2018,c.18
+SNWT 2018,c.15
+In force February 15, 2019
+Except sections 1-2, 4-6, 8-11, 13-15 and 18-29
+SI-001-2019
+SNWT 2023,c.7[E]
