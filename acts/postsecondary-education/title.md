@@ -1,0 +1,7 @@
+POST-SECONDARY EDUCATION ACT
+SNWT 2019,c.27
+In force December 16, 2022
+Except section 9, not in force
+SI-015-2022
+AMENDED BY
+SNWT 2022,c.5
