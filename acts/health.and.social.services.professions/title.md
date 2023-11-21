@@ -1,0 +1,18 @@
+HEALTH AND SOCIAL
+SERVICES PROFESSIONS ACT
+SNWT 2015,c.4
+Sections 1-68 and sections 73 and 75
+In force March 1, 2022
+SI-006-2022
+Sections 69-72 and section 74
+In force August 15, 2022
+SI-011-2022
+AMENDED BY
+SNWT 2015,c.27 [F]
+SNWT 2016,c.9
+SNWT 2017,c.9
+SNWT 2018,c.15
+In force February 15, 2019
+SI-002-2019
+SNWT 2023,c.7[E]
+SNWT 2023,c.25
