@@ -1,0 +1,36 @@
+TOBACCO TAX ACT
+RSNWT 1988,c.T-5
+AMENDED BY
+RSNWT 1988,c.27(Supp.)
+RSNWT 1988,c.53(Supp.)
+In force April 1, 1990
+RSNWT 1988,c.93(Supp.)
+In force April 1, 1991
+SNWT 1991-92,c.15
+SNWT 1994,c.18
+In force April 18, 1994, except section 4,
+which is in force May 1, 1994;
+SI-005-94
+SNWT 1995,c.11
+SNWT 1997,c.8
+SNWT 1998,c.24
+SNWT 1999,c.21
+In force December 31, 1999
+SNWT 2006,c.9
+In force January 21, 2007;
+SI-006-2006
+SNWT 2015,c.13
+In force April 1, 2016
+SI-001-2016
+SNWT 2017,c.14
+In force October 1, 2017
+SI-005-2017
+SNWT 2018,c.18
+SNWT 2019,c.30
+In force January 1, 2020
+SI-019-2019
+SNWT 2019,c.31
+In force March 31, 2020
+SI-004-2020
+SNWT 2022,c.4 [E]
+SNWT 2023,c.30
