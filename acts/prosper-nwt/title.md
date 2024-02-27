@@ -1,0 +1,21 @@
+PROSPER NWT ACT
+SNWT 2005,c.3
+In force April 1, 2005;
+SI-005-2005
+AMENDED BY
+SNWT 2010,c.16
+SNWT 2013,c.10
+In force November 1, 2013
+SI-003-2013
+SNWT 2015,c.13
+In force April 1, 2016
+SI-001-2016
+SNWT 2015,c.7
+In force June 29, 2018
+SI-003-2018
+SNWT 2018,c.7
+In force October 1, 2018
+SI-008-2018
+SNWT 2018,c.18
+SNWT 2023,c.31
+In force February 27, 2024
