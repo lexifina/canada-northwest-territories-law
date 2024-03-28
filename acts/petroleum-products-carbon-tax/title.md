@@ -1,0 +1,33 @@
+PETROLEUM PRODUCTS AND CARBON
+TAX ACT
+RSNWT 1988,c.P-5
+AMENDED BY
+RSNWT 1988,c.23(Supp.)
+RSNWT 1988,c.79(Supp.)
+RSNWT 1988,c.89(Supp.)
+SNWT 1995,c.12
+In force August 1, 1995;
+SI-004-95
+SNWT 1994,c.34
+In force September 30, 1995;
+SI-012-95
+SNWT 1997,c.8
+SNWT 2004,c.11
+SNWT 2009,c.21
+In force October 27, 2009, except s.2,
+deemed in force July 16, 1991
+SNWT 2015,c.13
+In force April 1, 2016
+SI-001-2016
+SNWT 2019,c.25
+In force September 1, 2019
+SI-012-2019
+SNWT 2019,c.30
+In force January 1, 2020
+SI-019-2019
+SNWT 2023,c.11
+In force April 1, 2023
+SNWT 2023,c.30
+SNWT 2023,c.33
+In force April 1, 2023
+SI-003-2024
