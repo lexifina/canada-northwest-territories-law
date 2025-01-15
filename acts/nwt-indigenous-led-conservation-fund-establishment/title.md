@@ -1,0 +1,10 @@
+NORTHWEST TERRITORIES
+INDIGENOUS-LED CONSERVATION FUND
+ESTABLISHMENT ACT
+SNWT 2024,c.10
+In force December 31, 2024
+SI-005-2024
+Except sections 4, 9 and 10
+Section 4 in force November 1, 2024
+Sections 9 and 10 not in force
+AMENDED BY
