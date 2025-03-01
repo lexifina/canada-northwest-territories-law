@@ -1,0 +1,1 @@
+## CONDOMINIUM ACT

@@ -1,0 +1,42 @@
+CONDOMINIUM ACT
+RSNWT 1988,c.C-15
+AMENDED BY
+SNWT 1991-92,c.36
+In force July 19, 1993
+SNWT 1994,c.8
+In force May 7, 2001;
+SI-004-2001
+SNWT 1996,c.9
+SNWT 1998,c.5
+SNWT 1996,c.19
+In force April 1, 1998;
+SI-005-98
+SNWT 1998,c.24
+In force March 31, 1999
+SNWT 2001,c.10
+In force November 6, 2001
+SNWT 2003,c.5
+SNWT 2006,c.16
+In force May 1, 2008;
+SI-003-2008
+SNWT 2007,c.6
+In force February 1, 2009, except
+portion of section 6;
+SI-009-2008
+SNWT 2008,c.8
+In force February 1, 2009
+SNWT 2009,c.12
+SNWT 2011,c.16
+SNWT 2011,c.22
+In force October 1, 2013;
+SI-002-2013
+SNWT 2014,c.31
+SNWT 2015,c.8
+In force August 31, 2015
+SI-004-2015
+SNWT 2018,c.6
+SNWT 2020,c.14
+SNWT 2023,c.7 [E]
+SNWT 2023,c.34
+In force March 1, 2025
+SI-001-2025
