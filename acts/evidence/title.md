@@ -1,0 +1,54 @@
+EVIDENCE ACT
+RSNWT 1988,c.E-8
+AMENDED BY
+RSNWT 1988,c.57(Supp.)
+RSNWT 1988,c.8(Supp.)
+In force July 19, 1993;
+SI-008-93
+SNWT 1994,c.28
+In force January 1, 1995;
+SI-020-94
+SNWT 1995,c.11
+SNWT 1997,c.12
+In force July 1, 1998;
+SI-009-98
+SNWT 2002,c.17
+SNWT 2003,c.15
+In force January 1, 2004;
+SI-004-2003
+SNWT 2003,c.21
+In force January 29, 2005;
+SI-001-2005
+SNWT 2005,c.14
+SNWT 2006,c.6
+In force August 1, 2006;
+SI-004-2006
+SNWT 2006,c.24
+In force April 2, 2007;
+SI-001-2007
+SNWT 2009,c.12
+SNWT 2011,c.4
+SNWT 2012,c.18
+SNWT 2013,c.23
+SNWT 2015,c.14
+In force August 1, 2016
+SI-008-2016
+SNWT 2017,c.19
+In force October 31, 2017
+SI-006-2017
+SNWT 2018,c.15
+In force February 15, 2019
+Except sections 1-2, 4-6, 8-11, 13-15 and 18-29
+SI-001-2019
+SNWT 2019,c.21
+In force September 1, 2019
+Except sections 1, 2, 3, 7 and 8
+SI-009-2019
+SNWT 2022,c.4
+SNWT 2015,c.4
+In force August 15, 2022
+SI-011-2022
+SNWT 2023,c.32
+In force November 1, 2023
+SI-005-2023
+SNWT 2024,c.9 [E]
