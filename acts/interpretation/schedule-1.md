@@ -1,0 +1,75 @@
+## SCHEDULE (Subsection 14(1))
+> General definitions
+1. In an enactment,
+"Act" or "statute" means a law of the Legislature enacted under the Northwest Territories Act (Canada); (loi)
+"adult" means an individual who has attained 19 years of age; (adulte)
+"age of majority" means 19 years of age; (majorité)
+"Auditor General" means the Auditor General of Canada appointed under the Auditor General Act (Canada); (vérificateur général)
+"bank" means a bank to which the Bank Act (Canada) applies; (banque)
+"Commissioner" means the Commissioner of the Northwest Territories; (commissaire)
+"Commissioner in Executive Council" means the Commissioner acting by and with the advice and consent of the Executive Council; (commissaire en Conseil exécutif)
+"Consolidated Revenue Fund" means the Consolidated Revenue Fund of the Northwest Territories established by subsection 34(1) of the Northwest Territories Act (Canada); (Trésor)
+"contravene" includes fail to comply with; (contrevenir)
+"Court of Appeal" means the Court of Appeal for the Northwest Territories; (Cour d’appel)
+"Criminal Code" means the Criminal Code (Canada); (Code criminel)
+"Deputy Minister" means the non-elected head of a department of the Government of the Northwest Territories; (sous-ministre)
+"enact" includes issue, make, establish or prescribe; (édicter)
+"enactment" means an Act or a regulation or a portion of an Act or a regulation; (texte)
+"Executive Council" means the Executive Council of the Northwest Territories; (Conseil exécutif)
+"Financial Management Board" means the Financial Management Board continued under subsection 6(1) of the Financial Administration Act; (Conseil de gestion financière)
+"Government of Canada" means Her Majesty in right of Canada; (gouvernement du Canada)
+"Governor", "Governor of Canada" or "Governor General" means the Governor General of Canada and includes the Administrator of Canada; (gouverneur)
+"Governor in Council" or "Governor General in Council" means the Governor General acting on the advice and with the consent of the Queen’s Privy Council for Canada; (gouverneur en conseil)
+"Her Majesty", "His Majesty", "the Queen", "the King", "the Crown" or "the Sovereign" means the Sovereign of the United Kingdom, Canada and Her or His other Realms and Territories, and Head of the Commonwealth; (Sa Majesté)
+"justice" means a justice of the peace, and includes two or more justices acting together as well as a judge of the Supreme Court or the Territorial Court; (juge de paix)
+"Legislative Assembly" means the Legislative Assembly of the Northwest Territories continued by the Northwest Territories Act (Canada); (Assemblée législative)
+"Legislature" means the Commissioner acting by and with the advice and consent of the Legislative Assembly; (Législature)
+"medical practitioner" means a person who is entitled to practise medicine in the Northwest Territories under the Medical Profession Act; (médecin)
+"Minister" means a member of the Executive Council appointed as a Minister under the Legislative Assembly and Executive Council Act; (ministre)
+"minor" means an individual who has not attained 19 years of age; (mineur)
+"municipal bylaw" means a bylaw made by a municipal council; (règlement municipal)
+"municipal corporation" means
+(a) a charter community established or continued under the Charter Communities Act,
+(b) a city, town or village established or continued under the Cities, Towns and Villages Act,
+(c) a hamlet established or continued under the Hamlets Act, or Tåîchô (d) a community government established by the Tåîchô Community Government Act; (corporation municipale)
+"municipal council" means the council of a municipal corporation; (conseil municipal)
+"municipality" means a municipal corporation or the area within the boundaries of a municipal corporation; (municipalité)
+"Northwest Territories" means the Northwest Territories as defined in the Northwest Territories Act (Canada); (Territoires du Nord-Ouest)
+"oath" or "affidavit" includes a solemn affirmation or declaration, whenever a person is authorized by law to solemnly affirm or declare instead of swearing; (serment ou affidavit)
+"Official Languages" means Official Languages as defined in the Official Languages Act; (langues officielles)
+"on summary conviction" means under and by virtue of the provisions of the Summary Conviction Procedures Act; (procédure sommaire)
+"peace officer" includes
+(a) a member of the Royal Canadian Mounted Police,
+(b) a police officer, constable, or other person employed to preserve and maintain the public peace,
+(c) a warden, correctional officer or other person employed at a correctional institution or of a place of detention or custody, including a youth custody facility, a place of temporary detention and a place of open custody,
+(d) a person employed to serve or execute civil process, including a sheriff and a bailiff,
+(e) a bylaw officer in respect of an offence under a municipal bylaw, and
+(f) a person appointed under an Act for the enforcement of that Act; (agent de la paix)
+"permanent resident of Canada" means a permanent resident within the meaning of subsection 2(1) of the Immigration and Refugee Protection Act (Canada); (résident permanent du Canada)
+"person" includes a corporation and the heirs, executors, administrators or other legal representatives of a person; (personne)
+"prescribed" means prescribed by regulation; (prévu)
+"province" means a province of Canada; (province)
+"public officer" means a person employed in the public service
+(a) who is authorized by or under an enactment to do or enforce the doing of an act or thing or to exercise a power, or
+(b) on whom a duty is imposed by or under an enactment; (fonctionnaire public)
+"public service" means public service as defined in subsection 1(1) of the Public Service Act; (fonction publique)
+"regulation" means a regulation as defined in subsection 1(1) of the Statutory Instruments Act; (règlement)
+"repeal" includes revoke, cancel or rescind; (abroger)
+"Rules of the Supreme Court" means the Rules of the Supreme Court as defined in the Judicature Act; (Règles de la Cour suprême)
+"Seal" means the Seal of the Northwest Territories established by Order of the Governor in Council on November 29, 1956; (sceau)
+"settlement" means an unincorporated community; (localité)
+"spouse" means spouse as defined in section 1 of the Family Law Act; (conjoint)
+"statutory declaration" means a statutory declaration as defined in the Evidence Act; (déclaration solennelle)
+"statutory instrument" means a statutory instrument as defined in subsection 1(1) of the Statutory Instruments Act; (texte réglementaire)
+"Supreme Court" means the Supreme Court of the Northwest Territories; (cour suprême)
+"swear" includes "affirm" and "declare", whenever a person is authorized by law to solemnly affirm or declare instead of swearing; (prêter serment)
+"Territorial Court" means the Territorial Court of the Northwest Territories; (Cour territoriale)
+"territorial judge" means a territorial judge as defined in the Territorial Court Act; (juge territorial)
+"territory", when used in reference to a part of Canada other than the Northwest Territories, means Nunavut and Yukon; (territoire)
+"United Kingdom" means the United Kingdom of Great Britain and Northern Ireland; (Royaume-Uni)
+"United States" means the United States of America; (États-Unis)
+"will" includes a codicil; (testament)
+"writing", "written" or any term of similar import includes words printed, typewritten, painted, engraved, lithographed, photographed or represented or reproduced by any mode of representing or reproducing words in visible form; (écrit)
+"young person" means a young person as defined in the Youth Justice Act; (adolescent)
+"youth justice court" means the Territorial Court designated as a youth justice court under subsection 3(1) of the Territorial Court Act, or the justices of the peace designated as a youth justice court under subsection 4.1(2) of the Justices of the Peace Act; (tribunal pour adolescents)
+"youth justice court judge" means a youth justice court judge as defined in the Youth Justice Act. (juge du tribunal pour adolescents) SNWT 2018,c.18,s.8(16),(17); SNWT 2023,c.7,s.21.
