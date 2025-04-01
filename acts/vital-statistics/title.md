@@ -1,0 +1,32 @@
+VITAL STATISTICS ACT
+SNWT 2011,c.34
+In force January 1, 2013;
+SI-004-2012
+AMENDED BY
+SNWT 2014,c.2
+In force October 1, 2015
+SI-006-2015
+SNWT 2015,c.14
+In force August 1, 2016
+SI-008-2016
+SNWT 2015,c.22
+In force January 29, 2017
+SI-001-2017
+SNWT 2017,c.2
+In force June 1, 2017
+SI-003-2017
+SNWT 2016,c.12
+In force July 1, 2017
+Except section 2 and subsections
+3(1) and 11(1)
+SI-004-2017
+SNWT 2017,c.20
+In force June 1, 2017
+SNWT 2017,c.18
+SNWT 2018,c.18
+SNWT 2020,c.14[F]
+SNWT 2022,c.4[F]
+SNWT 2023,c.32
+In force November 1, 2023
+SI-005-2023
+SNWT 2024,c.9 [F]
