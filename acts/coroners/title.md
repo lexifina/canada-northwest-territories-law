@@ -1,0 +1,25 @@
+CORONERS ACT
+RSNWT 1988,c.C-20
+AMENDED BY
+SNWT 1995,c.11
+SNWT 2000.c.15
+SNWT 2003,c.12
+SNWT 2010,c.16
+SNWT 2014,c.30
+In force June 1, 2015
+SI-001-2015
+SNWT 2015,c.22
+In force March 18, 2016
+SI-004-2016
+except sections 2, 5 to 9, and 19
+In force January 29, 2017
+SI-001-2017
+SNWT 2016,c.9
+SNWT 2017,c.16
+SNWT 2019,c.21
+Sections 3 and 8 in force October 1, 2019
+SI-009-2019
+SNWT 2023,c.32
+In force November 1, 2023
+SI-005-2023
+SNWT 2024,c.9 [F]
