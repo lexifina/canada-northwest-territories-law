@@ -1,0 +1,81 @@
+MOTOR VEHICLES ACT
+RSNWT 1988,c.M-16
+AMENDED BY
+RSNWT 1988,c.22(Supp.)
+RSNWT 1988,c.44(Supp.)
+RSNWT 1988,c.106(Supp.)
+SNWT 1994,c.14
+SNWT 1994,c.7
+In force January 1, 1995;
+SI-019-94
+SNWT 1995,c.11
+SNWT 1994,c.33
+In force September 30, 1995;
+SI-011-95
+SNWT 1996,c.15
+In force June 1, 1996
+SNWT 1997,c.8
+SNWT 1998,c.40
+SNWT 1998,c.21
+In force March 31, 1999;
+SI-007-99
+SNWT 1999,c.21
+In force December 31, 1999
+SNWT 2000,c.5
+SNWT 2001,c.13
+In force April 1, 2002;
+SI-001-2002
+SNWT 2003,c.9
+In force April 1, 2003
+SNWT 2003,c.14
+In force December 1, 2004;
+SI-009-2004
+SNWT 2003,c.22
+In force April 1, 2004;
+SI-001-2004
+SNWT 2003,c.31
+In force April 1, 2004;
+SI-003-2004
+SNWT 2004,c.7
+In force August 4, 2005
+SNWT 2006,c.5
+In force April 1, 2006;
+SI-001-2006
+SNWT 2007,c.15
+In force October 31, 2008;
+SI-008-2008
+SNWT 2007,c.16
+SNWT 2008,c.7
+In force July 1, 2009;
+SI-004-2009
+SNWT 2009,c.13
+SNWT 2011,c.8
+SNWT 2011,c.26
+In force January 1, 2012;
+SI-006-2011
+SNWT 2014,c.4
+SNWT 2015,c.22
+In force March 18, 2016
+SI-004-2016
+SNWT 2015,c.29
+In force April 1, 2016
+SI-005-2016
+SNWT 2015,c.28
+In force May 1, 2016
+SI-006-2016
+SNWT 2016,c.9
+SNWT 2018,c.6
+In force October 17, 2018
+SI-010-2018
+Except Sch.C,s.19
+In force December 18, 2018
+SNWT 2020,c.14[F]
+SNWT 2022,c.4
+SNWT 2022,c.10
+SNWT 2023,c.32
+In force November 1, 2023
+SI-005-2023
+SNWT 2024,c.9
+SNWT 2025,c.3
+In force March 21, 2025
+SI-002-2025
