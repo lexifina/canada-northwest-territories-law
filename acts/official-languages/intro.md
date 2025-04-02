@@ -1,0 +1,7 @@
+Reinforcing the commitment of the Government of the Northwest Territories to ensuring support for the provision of services in a manner that maintains fair and equitable access for Indigenous language speakers;
+Expressing the wish that the Indigenous languages will be entrenched in the Constitution of Canada as Official Languages of the Northwest Territories;
+Desiring to establish English and French as Official Languages of the Northwest Territories having equality of status and equal rights and privileges as Official Languages;
+Believing that the legal protection of languages will assist in preserving the culture and heritage of the people as expressed through their language;
+Desiring that all linguistic groups in the Northwest Territories should, without regard to their first language learned, have equal opportunities to obtain employment and participate in the institutions of the Legislative Assembly and Government of the Northwest Territories, with due regard to the principle of selection of personnel according to merit;
+Believing that preserving the use of Official Languages, and enhancing those languages, is a shared responsibility of language communities, the Legislative Assembly and the Government of the Northwest Territories;
+The Commissioner of the Northwest Territories, by and with the advice and consent of the Legislative Assembly, enacts as follows: SNWT 2023,c.9,s.2.
