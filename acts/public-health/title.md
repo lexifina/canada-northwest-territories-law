@@ -1,0 +1,28 @@
+PUBLIC HEALTH ACT
+SNWT 2007,c.17
+SI-007-2009;
+In force September 14, 2009
+AMENDED BY
+SNWT 2010,c.16
+SNWT 2011,c.16
+SNWT 2014,c.2
+In force October 1, 2015
+SI-006-2015
+SNWT 2017,c.18
+SNWT 2018,c.18
+SNWT 2018,c.15
+In force February 15, 2019
+Except sections 1-2, 5-6, 8, 10-11, 13-15, 18, 20-25
+and 27-29, SI-002-2019
+SNWT 2020,c.14[E]
+SNWT 2015,c.4
+In force March 1, 2022
+SI-006-2022
+SNWT 2019,c.2
+In force March 1, 2022
+SI-007-2022
+SNWT 2023,c.7[E]
+SNWT 2023,c.32
+In force November 1, 2023
+SI-005-2023
+SNWT 2024,c.9 [F]
