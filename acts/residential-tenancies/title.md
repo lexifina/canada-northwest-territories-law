@@ -1,0 +1,35 @@
+RESIDENTIAL TENANCIES ACT
+RSNWT 1988,c.R-5
+AMENDED BY
+RSNWT 1988,c.8(Supp)
+In force July 19, 1993;
+SI-008-93
+SNWT 1995,c.28
+In force July 1, 1996;
+SI-003-96
+SNWT 1997,c.8
+SNWT 1998,c.17
+SNWT 2002,c.18
+In force July 1, 2004;
+SI-006-2004
+SNWT 2008,c.9
+In force September 1, 2010;
+SI-004-2010
+SNWT 2010,c.16
+SNWT 2011,c.16
+SNWT 2012,c.18
+SNWT 2015,c.8
+In force August 31, 2015
+SI-004-2015
+SNWT 2015,c.27 [F]
+SNWT 2017,c.21
+Section 4 in force July 1, 2018
+SI-005-2018
+SNWT 2018,c.6
+SNWT 2019,c.21
+In force September 1, 2019
+Except sections 1, 2, 3, 7 and 8
+SI-009-2019
+SNWT 2023,c.8
+In force April 1, 2023
+SNWT 2024,c.9 [F]
