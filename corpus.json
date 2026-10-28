@@ -1,0 +1,46 @@
+{
+  "corpus": "ca/northwest-territories/acts",
+  "parent": "ca/federal/acts",
+  "name": "Consolidated Acts of the Northwest Territories",
+  "label": "Northwest Territories",
+  "language": "en",
+  "acts": 238,
+  "history": "current-only",
+  "history_from": "2004-02-17",
+  "record_to": "2025-09-01",
+  "record_note": "The Legislation Division publishes only the current consolidation of each Act (a bilingual PDF, English column read), so each Act has one version here, dated by the day its PDF was made. Earlier text is not available; the AMENDED BY lists and source notes are kept as text and in data/amendments.csv. Checked against the source PDFs on 2026-10-29.",
+  "checked_on": "2026-10-29",
+  "built": "2026-10-29",
+  "baseline_trailer": "Consolidated",
+  "in_force_trailer": "In-force",
+  "dates": {
+    "commit": "in-force day of the consolidated text: the CreationDate of the Act's consolidation PDF, or the latest in-force day its AMENDED BY list gives when that is later",
+    "baseline_trailer": "Consolidated",
+    "other_trailers": [
+      "Latest-listed-in-force",
+      "Printed"
+    ],
+    "time": "12:00 America/Yellowknife (UTC-7; UTC-6 in daylight time, hard-coded Canadian rules)"
+  },
+  "author": {
+    "consolidated": "Legislation Division, Department of Justice (Government of the Northwest Territories)",
+    "amendment": "none yet",
+    "unexplained": "Legislation Division, Department of Justice (Government of the Northwest Territories)"
+  },
+  "scope": {
+    "trailer": "Applies",
+    "when_absent": "this corpus records no scope notes (no commit carries Applies:); the absence is not a statement that the change reaches every case",
+    "default_reach": {
+      "rule": "presumption against retrospectivity; effect of repeal saved by the Interpretation Act",
+      "meaning": "an enactment is presumed not to apply to facts completed before it came into force, or to interfere with vested rights, unless the Legislature says so expressly or by necessary implication; a repeal does not affect rights acquired, or proceedings begun, under the repealed enactment",
+      "authority": "Interpretation Act, RSNWT 1988, c. I-8 (effect of repeal); R. v. Dineley, 2012 SCC 58, [2012] 3 S.C.R. 272",
+      "decided_here": false
+    }
+  },
+  "tool": "tools/in_force_on.py",
+  "citation": {
+    "file": "acts/([a-z0-9-]+)/s-0*([0-9]+(?:\\.[0-9]+)*)\\.md",
+    "cites": "([Ss]ections?|[Ss]ubsections?|[Pp]aragraphs?|ss?\\.) ?{n}([^0-9.]|\\.[^0-9]|$)"
+  },
+  "path_pattern": "acts/<official PDF stem>/s-<section, whole part padded to 3 digits>.md; acts/<stem>/schedule-<label>.md; acts/<stem>/intro.md; acts/<stem>/title.md"
+}
