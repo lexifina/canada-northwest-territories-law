@@ -23,13 +23,17 @@
   "2024": 11,
   "2025": 42
  },
- "commits": 239,
+ "commits": 242,
  "first": "2004-02-17",
  "issues": 39,
  "last": "2025-09-01",
  "note_citations": 7096,
  "retrieved": "2026-10-28",
  "sections": 12022,
- "today": "2026-10-29",
- "units": 12059
+ "today": "2026-11-05",
+ "units": 12059,
+ "historical_acts": 1,
+ "historical_snapshots": 2,
+ "baseline_checked_on": "2026-10-29",
+ "history_checked_on": "2026-11-05"
 }

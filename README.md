@@ -6,14 +6,18 @@ source is the office consolidation prepared by the Legislation Division of the D
 the Northwest Territories, published as bilingual PDFs at [gnwt.ca/resources/legislation](https://gnwt.ca/resources/legislation)
 (formerly justice.gov.nt.ca/en/legislation). Only the English text is taken.
 
-**What this repository is not, yet: a history.** The Legislation Division publishes only the current consolidation of
-each Act and keeps no earlier versions online. So each Act is a single commit holding its whole current text
-(`Kind: consolidated`), and no line is credited to an amending Act. New consolidations will be added as later
-commits, so the history grows forward from here. The amendment history the consolidation prints is kept: each Act's
-AMENDED BY list is in its `title.md`, the source note after each provision ("SNWT 2009,c.12,s.11(2).") stays in the
-text, and both are listed in [`data/amendments.csv`](data/amendments.csv).
+Most Acts have one current consolidation (`Kind: consolidated`). Délîne Final Self-Government
+Agreement Act also has two appended historical commencement snapshots: section 5 from 12 March 2015,
+and the complete Act from 1 September 2016. Section 20 of the certified Act and the consolidation's
+printed commencement dates establish those boundaries. Section 5's reference to 1 October 2013 is a
+deemed effect of provisions of the Agreement; it is not the Act's commencement date.
 
-The record holds 238 Acts, consolidated between 2004-02-17 and 2025-09-01, in 239 commits.
+The historical snapshots are labelled `Kind: correction` and preserve all earlier commits. Today's
+law files remain byte for byte as published. The AMENDED BY lists and provision source notes remain
+in the text and [`data/amendments.csv`](data/amendments.csv). Earlier versions of other Acts are not
+yet represented.
+
+The record holds 238 Acts, consolidated between 2004-02-17 and 2025-09-01, in 242 commits, including two historical commencement corrections.
 
 This is not an official version: the consolidations themselves say they are "not an official statement of the law"
 (see [Licence](#licence)).
@@ -44,11 +48,13 @@ is the consolidation date (`Consolidated:`). Some PDFs were made a few days befo
 came into force (the AMENDED BY list gives its in-force day); for those the text is the law only from that later day.
 So **each commit is dated by its `In-force:` day**: the PDF's creation day, or the latest in-force day the AMENDED BY
 list gives when that is later (`Date-source: latest-listed-in-force`; 39 Acts, listed in `data/issues.csv`).
-Commits are at noon in Yellowknife (Mountain Time: UTC-7, UTC-6 in daylight time, hard-coded Canadian rules). The
+The two Délîne historical snapshots instead use the source's printed commencement dates. Commits are at noon in Yellowknife (Mountain Time: UTC-7, UTC-6 in daylight time, hard-coded Canadian rules). The
 day says "this text, as consolidated, was the law from then"; it is not the day any one amendment took effect. The
 in-force dates the title page lists are kept as text, and the latest one is in the `Latest-listed-in-force:` trailer.
-`tools/in_force_on.py` answers for any date on or after an Act's consolidation date; for an earlier date it says
-there is no version, because the source has none.
+`tools/in_force_on.py` selects the latest recorded whole-Act snapshot whose `In-force:` day is on
+or before the requested date. Délîne has section 5 only from 2015-03-12 through 2016-08-31,
+and the complete Act from 2016-09-01. It reports no version when that Act or provision has no
+recorded snapshot in force on the requested date; earlier source text may exist outside this record.
 
 ## What "author" means
 
@@ -61,7 +67,7 @@ The AMENDED BY lists have 1752 entries; the source notes carry 7096 citations.
 
 ## What it does not show
 
-- Any text before the current consolidation, and the Acts as enacted (the Annual Statutes are separate PDFs).
+- Earlier text for Acts other than the two Délîne commencement snapshots; the Annual Statutes are separate PDFs.
 - The French text (equally authoritative; the right-hand column of each PDF).
 - Regulations (the 238 Acts come first; the 559 consolidated regulations on the same site are not yet included).
 - Acts the Legislation Division does not consolidate: appropriation, loan-authorization and write-off Acts and other

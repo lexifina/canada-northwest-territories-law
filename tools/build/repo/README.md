@@ -6,8 +6,9 @@ source is the office consolidation prepared by the Legislation Division of the D
 the Northwest Territories, published as bilingual PDFs at [gnwt.ca/resources/legislation](https://gnwt.ca/resources/legislation)
 (formerly justice.gov.nt.ca/en/legislation). Only the English text is taken.
 
-**What this repository is not, yet: a history.** The Legislation Division publishes only the current consolidation of
-each Act and keeps no earlier versions online. So each Act is a single commit holding its whole current text
+This baseline represents one current consolidation per Act. Certified Annual Statutes are
+separate official sources; earlier text is included only when a sourced historical snapshot is appended.
+Each baseline Act is a single commit holding its whole current text
 (`Kind: consolidated`), and no line is credited to an amending Act. New consolidations will be added as later
 commits, so the history grows forward from here. The amendment history the consolidation prints is kept: each Act's
 AMENDED BY list is in its `title.md`, the source note after each provision ("SNWT 2009,c.12,s.11(2).") stays in the
@@ -47,8 +48,9 @@ list gives when that is later (`Date-source: latest-listed-in-force`; {{ISSUES}}
 Commits are at noon in Yellowknife (Mountain Time: UTC-7, UTC-6 in daylight time, hard-coded Canadian rules). The
 day says "this text, as consolidated, was the law from then"; it is not the day any one amendment took effect. The
 in-force dates the title page lists are kept as text, and the latest one is in the `Latest-listed-in-force:` trailer.
-`tools/in_force_on.py` answers for any date on or after an Act's consolidation date; for an earlier date it says
-there is no version, because the source has none.
+`tools/in_force_on.py` selects the latest recorded whole-Act snapshot whose `In-force:` day is on
+or before the requested date. It reports no version when that Act or provision has no recorded
+snapshot in force on the requested date. Earlier source text may exist outside this record.
 
 ## What "author" means
 

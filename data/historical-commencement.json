@@ -1,0 +1,25 @@
+{
+  "act": "acts/deline-final-self-government-agreement",
+  "source_urls": [
+    "https://gnwt.ca/sites/default/files/legacy_justice/files/bills/17/2015.5/bill_46.pdf",
+    "https://gnwt.ca/sites/default/files/legacy_justice/files/legislation/deline-final-self-government-agreement/deline-final-self-government-agreement.a.pdf"
+  ],
+  "in_force_basis": "Certified Act section 20(2); consolidation title: section 5 in force March 12, 2015; Act except section 5 in force September 1, 2016, SI-007-2016.",
+  "snapshots": [
+    {
+      "in_force": "2015-03-12",
+      "through": "2016-08-31",
+      "commit": "8718c971424dbc0fa747544a25e1635039e951b2"
+    },
+    {
+      "in_force": "2016-09-01",
+      "through": null,
+      "commit": "346b26aabea61d23c5fb850fad85953eda844139"
+    }
+  ],
+  "source_images": 0,
+  "images_referenced": 0,
+  "images_omitted": 0,
+  "scope": "Only Délîne commencement; other Acts retain current-only coverage.",
+  "checked_on": "2026-11-05"
+}

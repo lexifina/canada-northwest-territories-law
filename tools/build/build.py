@@ -35,7 +35,7 @@ HERE = Path(__file__).parent
 sys.path.insert(0, str(HERE))
 import parse  # noqa: E402
 
-sys.path.insert(0, str(HERE.parent / 'gitlaw_common'))
+sys.path.append(str(HERE.parent / 'gitlaw_common'))
 try:
     from publish_gate import publish_gate  # noqa: E402
 except ImportError:          # an outside reader rebuilding from the published tools: no private rule to apply
@@ -52,7 +52,7 @@ PUBLISHER = ('Legislation Division, Department of Justice (Government of the Nor
              'legislation-division@justice-gov-nt-ca.invalid')
 SITE = 'https://gnwt.ca'
 CORPUS = 'ca/northwest-territories/acts'
-BUILD_FILES = ('parse.py', 'build.py', 'check_repo.py', 'test_repo.py')
+BUILD_FILES = ('parse.py', 'build.py', 'check_repo.py', 'test_repo.py', 'test_repo_baseline.py')
 ACT_RE = re.compile(r'\.a(?:_\d+)?\.pdf$')
 # Statute prefixes are printed both bare and dotted: SNWT / S.N.W.T., RSNWT / R.S.N.W.T., SC / S.C., RSC / R.S.C.
 NWT = r'(?:R\.?\s?S\.?|S\.?)\s?N\.?\s?W\.?\s?T\.?'
@@ -351,6 +351,7 @@ def docs(laws: list[dict], built: dict, commits: list[tuple], issues: list[list[
         'data/source-sha256.tsv': sums.encode('utf-8'),
         'tools/in_force_on.py': (REPO_FILES / 'tools' / 'in_force_on.py').read_bytes(),
     }
+    out['tools/append_deline_history.py'] = (HERE / 'append_deline_history.py').read_bytes()
     for n in BUILD_FILES:
         if (HERE / n).exists():
             out[f'tools/build/{n}'] = (HERE / n).read_bytes()

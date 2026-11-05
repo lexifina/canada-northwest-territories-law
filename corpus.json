@@ -5,16 +5,16 @@
   "label": "Northwest Territories",
   "language": "en",
   "acts": 238,
-  "history": "current-only",
+  "history": "in-force",
   "history_from": "2004-02-17",
   "record_to": "2025-09-01",
-  "record_note": "The Legislation Division publishes only the current consolidation of each Act (a bilingual PDF, English column read), so each Act has one version here, dated by the day its PDF was made. Earlier text is not available; the AMENDED BY lists and source notes are kept as text and in data/amendments.csv. Checked against the source PDFs on 2026-10-29.",
+  "record_note": "The baseline records 238 current consolidations. Délîne Final Self-Government Agreement Act also records section 5-only commencement on 2015-03-12 and complete commencement on 2016-09-01 in appended correction snapshots. All current law files retain the published baseline bytes. The Délîne additions were checked against the certified Act and official consolidation on 2026-11-05; the baseline checked_on date is unchanged.",
   "checked_on": "2026-10-29",
   "built": "2026-10-29",
   "baseline_trailer": "Consolidated",
   "in_force_trailer": "In-force",
   "dates": {
-    "commit": "in-force day of the consolidated text: the CreationDate of the Act's consolidation PDF, or the latest in-force day its AMENDED BY list gives when that is later",
+    "commit": "in-force day of the consolidated text: the CreationDate of the Act's consolidation PDF, or the latest in-force day its AMENDED BY list gives when that is later; appended historical commencement snapshots use the legal dates printed by the source",
     "baseline_trailer": "Consolidated",
     "other_trailers": [
       "Latest-listed-in-force",
@@ -42,5 +42,17 @@
     "file": "acts/([a-z0-9-]+)/s-0*([0-9]+(?:\\.[0-9]+)*)\\.md",
     "cites": "([Ss]ections?|[Ss]ubsections?|[Pp]aragraphs?|ss?\\.) ?{n}([^0-9.]|\\.[^0-9]|$)"
   },
-  "path_pattern": "acts/<official PDF stem>/s-<section, whole part padded to 3 digits>.md; acts/<stem>/schedule-<label>.md; acts/<stem>/intro.md; acts/<stem>/title.md"
+  "path_pattern": "acts/<official PDF stem>/s-<section, whole part padded to 3 digits>.md; acts/<stem>/schedule-<label>.md; acts/<stem>/intro.md; acts/<stem>/title.md",
+  "historical_coverage": [
+    {
+      "act": "acts/deline-final-self-government-agreement",
+      "dates": [
+        "2015-03-12",
+        "2016-09-01"
+      ],
+      "source": "https://gnwt.ca/sites/default/files/legacy_justice/files/bills/17/2015.5/bill_46.pdf",
+      "checked_on": "2026-11-05"
+    }
+  ],
+  "history_coverage": "Partial: current consolidation baselines for 238 Acts; two Délîne commencement snapshots."
 }

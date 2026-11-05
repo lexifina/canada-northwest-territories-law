@@ -4,18 +4,17 @@ Standard library only.
     python -X utf8 test_repo.py <repo> [--record]
     python -X utf8 tools/build/test_repo.py .          # from inside the repository
 
-The source keeps only the current consolidation of each Act, so the history is current-only: one commit per Act.
-It asserts that:
-1. `git blame` on a section names the Legislation Division (the publisher) as the only author of its lines;
-2. tools/in_force_on.py gives a section and a whole Act as main has them on the build day, and says there is no
-   version before the Act's In-force day;
-3. every law commit touches exactly one Act directory, and every Act in laws.csv has exactly one commit;
-4. every commit has an `In-force:` trailer, commits are in In-force order, none after the build day, no merges and
-   no CRs in messages, and each commit is dated noon in Yellowknife on its In-force day;
-5. only the documentation commit (the last one) is by Lexifina, and Lexifina commits every commit;
-6. data/issues.csv lists exactly the Acts dated by a later AMENDED BY in-force day, and data/amendments.csv has the
-   AMENDED BY entries of every Act whose title page has that list;
-7. every git or python command in the README's table runs and prints something.
+The corpus has one consolidated baseline per Act and may append explicitly registered historical
+correction snapshots and documentation commits. The gate checks the entire history:
+1. Sample blame still names the source publisher.
+2. The reader gives the current baseline and every registered commencement boundary correctly.
+3. Each Act has exactly one ordinary baseline; every correction matches its declared snapshot,
+   legal interval, Act path, complete Files coverage and required provenance. Documentation touches no law.
+4. Every commit has a real ISO In-force date, is not after the checked day, is noon in Yellowknife,
+   has no merge or CR; ordinary baseline dates remain ordered and correction dates match their intervals.
+5. Every documentation author is Lexifina; every law author is the publisher; all committers are Lexifina.
+6. The original issues and amendment ledger checks still cover every Act.
+7. Every git/python command in the README's table runs and prints output.
 With --record the result is written to verification.json next to this script.
 """
 import argparse
@@ -63,7 +62,31 @@ class Test:
                         '%x1f%P%x1e', '--date=raw', 'main').split('\x1e')
         self.log = [r.strip('\n').split('\x1f') for r in rows if r.strip()]
         self.laws = list(csv.DictReader(io.StringIO(self.git('show', 'main:laws.csv'))))
-        self.today = json.loads(self.git('show', 'main:data/stats.json'))['today']
+        self.stats = json.loads(self.git('show', 'main:data/stats.json'))
+        self.today = self.stats['today']
+        raw = self.git('log', '--format=%x1d%H%x1e%B%x1e', '--name-only', 'main')
+        self.records = {}
+        for block in raw.split('\x1d')[1:]:
+            h, message, paths = block.split('\x1e', 2)
+            h = h.strip()
+            trailer_block = message.strip().rsplit('\n\n', 1)[-1]
+            trailers = {}
+            for line in trailer_block.splitlines():
+                match = re.fullmatch(r'([A-Za-z][A-Za-z-]*): (.*)', line)
+                if match:
+                    trailers.setdefault(match.group(1), []).append(match.group(2))
+            kind = (trailers.get('Kind') or [''])[0]
+            self.records[h] = {'kind': kind, 'message': message, 'trailers': trailers,
+                               'paths': [p for p in paths.splitlines() if p]}
+        present = self.git('ls-tree', '--name-only', 'main', 'data/historical-commencement.json').strip()
+        self.history = json.loads(self.git('show', 'main:data/historical-commencement.json')) if present else None
+        self.snapshots = {}
+        if self.history:
+            for state in self.history['snapshots']:
+                assert state['commit'] not in self.snapshots, 'duplicate historical snapshot commit'
+                self.snapshots[state['commit']] = state
+        assert set(self.records) == {c[0] for c in self.log}, 'incomplete commit classification'
+
 
     def git(self, *args: str) -> str:
         out = subprocess.run(['git', *args], cwd=self.repo, capture_output=True, text=True, encoding='utf-8')
@@ -74,6 +97,32 @@ class Test:
     def tool(self, *args: str) -> subprocess.CompletedProcess:
         return subprocess.run([sys.executable, 'tools/in_force_on.py', *args], cwd=self.repo, capture_output=True,
                               text=True, encoding='utf-8')
+
+    def files_at(self, commit: str, paths: list[str]) -> dict[str, str]:
+        specs = ''.join(f'{commit}:{p}\n' for p in paths).encode('utf-8')
+        done = subprocess.run(['git', 'cat-file', '--batch'], cwd=self.repo,
+                              input=specs, capture_output=True, check=True)
+        data, offset, result = done.stdout, 0, {}
+        for path in paths:
+            end = data.index(b'\n', offset)
+            header = data[offset:end].split()
+            assert len(header) == 3 and header[1] == b'blob', f'{commit}:{path} missing'
+            size = int(header[2])
+            result[path] = data[end + 1:end + 1 + size].decode('utf-8')
+            offset = end + size + 2
+        return result
+
+    def ordinary_for(self, act: str) -> str:
+        matches = [h for h, record in self.records.items() if record['kind'] == 'consolidated'
+                   and any(p.startswith(act + '/') for p in record['paths'])]
+        assert len(matches) == 1, f'{act}: expected one ordinary baseline, got {len(matches)}'
+        return matches[0]
+
+    def whole_at(self, commit: str, act: str) -> str:
+        names = self.git('show', f'{commit}:{act}/index.txt').splitlines()
+        paths = [f'{act}/{name}' for name in names]
+        files = self.files_at(commit, paths)
+        return ''.join(files[path] + '\n' for path in paths)
 
     def check(self, name: str, fn):
         try:
@@ -109,34 +158,94 @@ class Test:
         assert early.returncode != 0 and 'no version' in early.stderr, f'{before}: {early.stderr.strip()[:200]}'
         sch = self.tool(self.today, law, 'schedule-a')
         assert sch.returncode == 0 and 'COLUMN ONE' in sch.stdout, 'schedule-a lacks its COLUMN ONE heading'
-        return f'{path} on {self.today} == main; whole Act has s. {n}; {before}: no version; schedule-a read'
+        history_detail = ''
+        if self.history:
+            act = self.history['act']
+            states = self.history['snapshots']
+            assert len(states) == 2, 'commencement record requires partial and full snapshots'
+            first, full = states
+            assert first['through'] == (date.fromisoformat(full['in_force']) - timedelta(days=1)).isoformat()
+            assert full['through'] is None
+            baseline = self.ordinary_for(act)
+            s5 = self.git('show', f'{baseline}:{act}/s-005.md')
+            full_text = self.whole_at(baseline, act)
+            earliest_before = (date.fromisoformat(first['in_force']) - timedelta(days=1)).isoformat()
+            no_state = self.tool(earliest_before, act)
+            assert no_state.returncode != 0 and 'no version' in no_state.stderr
+            for day in [first['in_force'], first['through']]:
+                partial = self.tool(day, act)
+                section = self.tool(day, act, '5')
+                absent = self.tool(day, act, '1')
+                assert partial.returncode == 0 and s5 in partial.stdout
+                assert section.returncode == 0 and section.stdout == s5
+                assert '\n1. ' not in partial.stdout and '\n20. ' not in partial.stdout
+                assert absent.returncode != 0 and 'no version' in absent.stderr
+            for day in [full['in_force'], self.today]:
+                complete = self.tool(day, act)
+                assert complete.returncode == 0 and complete.stdout == full_text, f'{act} on {day}'
+            history_detail = '; registered commencement boundaries and missing section checked'
+        return f'{path} on {self.today} == main; whole Act has s. {n}; {before}: no version; schedule-a read{history_detail}'
 
     # 3
     def one_commit_per_act(self):
-        out = self.git('log', '--format=%x1e%H', '--name-only', 'main')
-        dirs_by_commit = {}
-        for block in out.split('\x1e'):
-            lines = [l for l in block.splitlines() if l]
-            if lines:
-                dirs_by_commit[lines[0]] = {'/'.join(p.split('/')[:2]) for p in lines[1:] if p.startswith('acts/')}
-        law_commits = [c for c in self.log[1:]]
-        seen = {}
-        for c in law_commits:
-            ds = dirs_by_commit[c[0]]
-            assert len(ds) == 1, f'{c[0][:10]} touches {sorted(ds)[:4]}'
-            d = next(iter(ds))
-            assert d not in seen, f'{d} in two commits'
-            seen[d] = c[0]
-        assert not dirs_by_commit[self.log[0][0]], 'the documentation commit touches acts/'
-        want = {l['dir'].rstrip('/') for l in self.laws}
-        assert set(seen) == want, f'laws.csv vs commits: {sorted(want ^ set(seen))[:5]}'
+        want = {law['dir'].rstrip('/') for law in self.laws}
+        seen, corrections, documents = {}, set(), []
+        for h, record in self.records.items():
+            kind, paths = record['kind'], record['paths']
+            acts = {'/'.join(p.split('/')[:2]) for p in paths if p.startswith('acts/')}
+            assert kind in {'consolidated', 'correction', 'documentation'}, f'{h[:10]}: unknown Kind {kind!r}'
+            if kind == 'documentation':
+                assert not acts, f'{h[:10]}: documentation touches law text'
+                documents.append(h)
+                continue
+            assert len(acts) == 1, f'{h[:10]} touches {sorted(acts)}'
+            act = next(iter(acts))
+            assert act in want and all(p.startswith(act + '/') for p in paths), f'{h[:10]}: mixed paths'
+            if kind == 'consolidated':
+                assert act not in seen, f'{act} in two ordinary commits'
+                seen[act] = h
+                continue
+            assert h in self.snapshots, f'{h[:10]}: unregistered correction'
+            state = self.snapshots[h]
+            trailers = record['trailers']
+            required = ['In-force', 'Corrects', 'Supersedes', 'Reason', 'Act-path', 'In-force-basis', 'Source', 'Files']
+            for key in required:
+                assert trailers.get(key), f'{h[:10]}: missing {key}'
+            for key in required[:-2]:
+                assert len(trailers[key]) == 1, f'{h[:10]}: repeated {key}'
+            assert self.history and act == self.history['act'] == trailers['Act-path'][0]
+            assert trailers['In-force'][0] == state['in_force']
+            expected = f"{act} {state['in_force']}..{state['through'] or ''}"
+            assert trailers['Corrects'][0] == expected, f'{h[:10]}: correction interval differs from registered state'
+            assert trailers['Reason'][0].strip() and trailers['In-force-basis'][0] == self.history['in_force_basis']
+            assert set(trailers['Source']) == set(self.history['source_urls'])
+            supersedes = trailers['Supersedes'][0]
+            assert supersedes == 'none' or re.fullmatch(r'[a-f0-9]{40}', supersedes), f'{h[:10]}: Supersedes'
+            if supersedes != 'none':
+                assert self.git('cat-file', '-t', supersedes).strip() == 'commit'
+            live = set(self.git('ls-tree', '-r', '--name-only', h, '--', act).splitlines())
+            deleted = set(self.git('diff-tree', '--no-commit-id', '--name-only', '--diff-filter=D', '-r', h).splitlines())
+            declared = trailers['Files']
+            assert len(declared) == len(set(declared)), f'{h[:10]}: repeated Files'
+            assert set(declared) == live | deleted, f'{h[:10]}: Files must cover retained and removed snapshot paths'
+            assert all(p.startswith(act + '/') for p in declared)
+            index = self.git('show', f'{h}:{act}/index.txt').splitlines()
+            assert {f'{act}/{name}' for name in index} | {f'{act}/index.txt'} == live, f'{h[:10]}: snapshot index incomplete'
+            corrections.add(h)
+        assert set(seen) == want, f'laws.csv vs ordinary commits: {sorted(want ^ set(seen))[:5]}'
+        assert corrections == set(self.snapshots), 'registered history vs correction commits'
+        assert documents and self.records[self.log[0][0]]['kind'] == 'documentation', 'tip must be documentation'
         tree = {'/'.join(p.split('/')[:2]) for p in self.git('ls-tree', '-r', '--name-only', 'main', 'acts').split()}
         assert tree == want, f'tree vs laws.csv: {sorted(tree ^ want)[:5]}'
-        return f'{len(seen)} Acts, one commit each'
+        assert self.stats['commits'] == len(self.log), 'stats commit count differs from complete history'
+        assert self.stats.get('historical_snapshots', 0) == len(corrections)
+        assert self.stats.get('historical_acts', 0) == (1 if self.history else 0)
+        return f'{len(seen)} Acts, one ordinary baseline each; {len(corrections)} fully validated corrections; {len(documents)} documentation commits'
 
     # 4
     def dates(self):
-        days = []
+        ordinary_days, documentation_days, days = [], [], []
+        assert re.fullmatch(r'\d{4}-\d{2}-\d{2}', self.today), 'invalid checked day'
         for h, an, cn, ad, inf, parents in self.log:
             inf = inf.strip()
             assert re.fullmatch(r'\d{4}-\d{2}-\d{2}', inf), f'{h[:10]}: In-force {inf!r}'
@@ -147,20 +256,44 @@ class Test:
             ts = int(datetime(d.year, d.month, d.day, 12, tzinfo=timezone(timedelta(hours=off))).timestamp())
             want = f'{ts} {"-" if off < 0 else "+"}{abs(off):02d}00'
             assert ad == want, f'{h[:10]}: date {ad}, want noon Yellowknife {want} for {inf}'
+            kind = self.records[h]['kind']
+            if kind == 'consolidated':
+                ordinary_days.append(inf)
+            elif kind == 'documentation':
+                documentation_days.append(inf)
+            elif kind == 'correction':
+                assert h in self.snapshots, f'{h[:10]}: unregistered correction date'
+                state = self.snapshots[h]
+                assert inf == state['in_force'], f'{h[:10]}: correction date mismatch'
+                if state['through'] is not None:
+                    end = date.fromisoformat(state['through'])
+                    assert d <= end and state['through'] <= self.today, f'{h[:10]}: invalid correction end'
+            else:
+                raise AssertionError(f'{h[:10]}: unknown commit kind')
             days.append(inf)
-        assert days == sorted(days, reverse=True), 'commits not in In-force order'
+        assert ordinary_days == sorted(ordinary_days, reverse=True), 'ordinary baselines not in In-force order'
+        assert documentation_days == sorted(documentation_days, reverse=True), 'documentation dates moved backwards'
         assert self.git('rev-list', '--merges', '--count', 'main').strip() == '0', 'merges'
-        cr = self.git('log', '--format=%B', 'main').count('\r')
-        assert cr == 0, f'{cr} CRs in messages'
-        return f'{len(days)} commits, {days[-1]} to {days[0]}, all at noon Yellowknife; 0 merges; 0 CRs'
+        raw = subprocess.run(['git', 'log', '--format=%B', 'main'], cwd=self.repo, capture_output=True, check=True).stdout
+        assert raw.count(b'\r') == 0, 'CRs in messages'
+        if self.history:
+            assert self.today == max(self.stats['baseline_checked_on'], self.history['checked_on']), 'checked-day metadata mismatch'
+        return f'{len(days)} commits individually dated/checked at noon; ordinary baselines ordered; historical intervals validated; 0 merges; 0 CRs'
 
     # 5
     def lexifina(self):
-        by_lex = [c for c in self.log if c[1] == 'Lexifina']
-        assert len(by_lex) == 1 and by_lex[0] is self.log[0], f'{len(by_lex)} commits by Lexifina'
-        assert all(c[2] == 'Lexifina' for c in self.log), 'a committer other than Lexifina'
-        assert {c[1] for c in self.log[1:]} == {PUBLISHER}, 'law commits by someone else'
-        return f'only {self.log[0][0][:10]} (documentation) is by Lexifina'
+        documents = []
+        for h, author, committer, ad, inf, parents in self.log:
+            assert committer == 'Lexifina', f'{h[:10]}: committer other than Lexifina'
+            kind = self.records[h]['kind']
+            if kind == 'documentation':
+                assert author == 'Lexifina', f'{h[:10]}: documentation author'
+                assert not any(p.startswith('acts/') for p in self.records[h]['paths']), f'{h[:10]}: documentation changes law'
+                documents.append(h)
+            else:
+                assert kind in {'consolidated', 'correction'} and author == PUBLISHER, f'{h[:10]}: law author {author!r}'
+        assert documents and self.log[0][0] in documents, 'latest commit is not documentation'
+        return f'all {len(documents)} documentation commits authored by Lexifina; all law commits by the publisher; every committer Lexifina'
 
     # 6
     def ledgers(self):
@@ -173,9 +306,11 @@ class Test:
         amend = list(csv.DictReader(io.StringIO(self.git('show', 'main:data/amendments.csv'))))
         with_list = {r['law'] for r in amend if r['source'] == 'amended-by'}
         missing = []
+        title_paths = [l['dir'].rstrip('/') + '/title.md' for l in self.laws]
+        titles = self.files_at('main', title_paths)
         for l in self.laws:
             d = l['dir'].rstrip('/')
-            title = self.git('show', f'main:{d}/title.md')
+            title = titles[d + '/title.md']
             k = title.upper().find('AMENDED BY')
             # some title pages print an empty AMENDED BY heading (an Act never amended)
             if k >= 0 and re.search(r'\d{4}', title[k:]) and d not in with_list:
@@ -209,9 +344,9 @@ def main():
     t = Test(repo)
     t.check('blame names the publisher', t.blame)
     t.check('the on-date tool', t.on_date)
-    t.check('one commit per Act', t.one_commit_per_act)
+    t.check('one ordinary baseline per Act and complete correction provenance', t.one_commit_per_act)
     t.check('In-force dates, noon Yellowknife, no merges or CRs', t.dates)
-    t.check('only the documentation commit is by Lexifina', t.lexifina)
+    t.check('only documentation authors are Lexifina', t.lexifina)
     t.check('issues and amendments ledgers', t.ledgers)
     t.check('README commands run', t.readme)
     ok = all(r[1] for r in t.results)
