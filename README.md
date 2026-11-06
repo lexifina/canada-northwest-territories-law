@@ -1,5 +1,7 @@
 # Northwest Territories law, change by change
 
+Part of [lexifina/global-law](https://github.com/lexifina/global-law), one git history for every country's law: this is the law of Northwest Territories, Canada, which global-law reads at `canada/northwest-territories/acts/`.
+
 The consolidated Acts of the Northwest Territories as a git repository: 238 Acts, 12022 sections, one
 file per section, schedule or form, one paragraph per line, so `git blame` and `git diff` work line by line. The
 source is the office consolidation prepared by the Legislation Division of the Department of Justice, Government of
